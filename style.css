@@ -1,88 +1,100 @@
+:root {
+    --viridian: #6b9080ff;
+    --cambridge-blue: #a4c3b2ff;
+    --mint-green: #cce3deff;
+    --azure-web: #eaf4f4ff;
+    --mint-cream: #f6fff8ff;
+}
+.nav-link {
+    color: #E5C3A6;
+}
+
+/* Applying a professional font */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-    background-color: #f0f5fe;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(gameoflife.gif);
 }
 
-section {
-    background-color: #f9f9f9; /* Subtle background color */
-    border-radius: 10px; /* Rounded corners for the box effect */
-    padding: 20px; /* Space between content and border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for a slight lift */
-    margin-bottom: 30px; /* Space between sections */
-    margin-top: 20px; /* Add top margin to sections */
+  .carousel {
+    width: 100%; /* Yeap you can change the width and height*/
+    height:600px;
+  }
+
+  .carousel > .carousel-inner > .carousel-item > img{
+    width: 100%; /* Yeap you can change the width and height*/
+    height:600px;
+}
+/* Navbar styles */
+.navbar {
+    background-color: #2E4374; /* Dark Gray */
+    text-align: center;
+    color: #E5C3A6;
 }
 
-h2 {
-    font-size: 1.5em;
+.col-md {
+    justify-content: center;
+    margin: 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding */
+    background-color: #7C81AD;
+    color: #E5C3A6;
+}
+
+.nav-link:hover {
+    color: var(--mint-cream);
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+/* Container and section styles */
+.container {
+    justify-content: center;
+    margin: auto;
+    margin-top: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; 
+    background-color: #4B527E;
+    max-height: 100%;
+}
+
+.section {
+    background-color: #ffffff; /* White */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    color: #343a40; /* Dark Gray */
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: #343a40; /* Dark Gray */
+    font-size: 16px;
+}
+
+.section ul {
+    list-style-type: none;
+}
+
+.section ul li {
+    color: #343a40; /* Dark Gray */
     margin-bottom: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-a {
-    color: #007BFF;
+.section ul li a {
+    color: #007bff; /* Primary Blue */
     text-decoration: none;
 }
 
-a:hover {
+.section ul li a:hover {
     text-decoration: underline;
+    text-decoration-color: darkcyan;
 }
 
-.profpic {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-}
-
-        /* Additional style for the navbar */
-        .navbar {
-            background-color: #343a40; /* Dark background color */
-            padding: 10px 20px; /* Add padding to the navbar */
-            border-radius: 10px; /* Rounded corners for the box effect */
-        }
-
-        .navbar a {
-            color: #f0f5fe; /* White text color */
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-                /* New style for the grid container */
-                .grid-container {
-                    display: grid;
-                    grid-template-columns: .3fr 1fr 1fr; /* 1 column for profile picture, 2 columns for contact info and career objectives */
-                    gap: 20px; /* Space between grid items */
-                }
-
-                .grid-container1 {
-                    display: grid;
-                     /* 1 column for profile picture, 2 columns for contact info and career objectives */
-                    gap: 20px; /* Space between grid items */
-                }
-        
-                /* Style for profile picture */
-                .profile-picture {
-                    border-radius: 10px;
-                }
-        
-                /* Style for contact information */
-                .contact-info {
-                    max-width: 100%; /* Set contact info to 100% width of its container */
-                }
-        
-                /* Style for career objectives */
-                .career-objectives {
-                    
-                }
-
-                
