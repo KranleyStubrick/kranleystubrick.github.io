@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="portfolio.html" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="./img/ian2.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="OpenGL.html" class="w3-bar-item w3-button w3-padding"><i ></i>OpenGL</a>
+    <a href="Jupyter.html" class="w3-bar-item w3-button w3-padding"><i ></i>Jupyter</a>
+    <a href="WebApp.html" class="w3-bar-item w3-button w3-padding"><i ></i>Web App</a>
+    <a href="RustEncryption.html" class="w3-bar-item w3-button w3-padding"><i ></i>Rust Encryption</a>
+    <a href="Bash.html" class="w3-bar-item w3-button w3-padding"><i ></i>Bash</a>
+    <a href="CAES.html" class="w3-bar-item w3-button w3-padding"><i ></i>C++ AES Implementation</a>
+  </div>
+  
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <div class="w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+              
+
+        <h2>C++ AES Implementation from Scratch</h2>
+
+        <a href="CPPAES.txt">Link to File</a>
+
+        <p>This project represents a meticulous and comprehensive implementation of the Advanced Encryption Standard (AES) algorithm entirely from scratch using C++. The primary objective is to delve into the intricate details of cryptographic concepts, with a focus on Galois field mathematical functions, key expansion, and the nuanced AES encryption and decryption processes.</p>
+    
+        <h3>Key Components:</h3>
+        <ul>
+            <li><strong>Galois Field Mathematics:</strong> Implementation of Galois field operations is at the core of this project. This includes the SubBytes transformation, ShiftRows operation, MixColumns operation, and the critical AddRoundKey step. These operations form the foundation of AES and are meticulously crafted to ensure accuracy and efficiency.</li>
+            <li><strong>Key Expansion:</strong> The project includes a robust key expansion algorithm that generates round keys from the initial cipher key. This process involves applying various transformations and calculations to create a set of round keys used in the successive encryption rounds.</li>
+            <li><strong>C++ Programming:</strong> The entire AES algorithm is implemented in C++, showcasing expertise in low-level programming, algorithmic design, and memory management. The use of C++ provides a balance between efficiency and readability in handling complex cryptographic operations.</li>
+        </ul>
+    
+        <h3>Encryption Process Overview:</h3>
+        <p>The AES encryption process involves several well-defined steps:</p>
+        <ol>
+            <li><strong>Key Expansion:</strong> The original cipher key is expanded into a set of round keys using the key expansion algorithm.</li>
+            <li><strong>Initial Round:</strong> The input data is combined with the initial round key using the AddRoundKey operation.</li>
+            <li><strong>Main Rounds:</strong> A series of rounds, each comprising SubBytes, ShiftRows, MixColumns, and AddRoundKey operations, are performed to iteratively transform the data.</li>
+            <li><strong>Final Round:</strong> The last round excludes the MixColumns operation, providing the final encrypted output.</li>
+        </ol>
+    
+        <p>This project offers a comprehensive and educational resource for understanding the inner workings of AES, from its mathematical foundations to the practical implementation in C++. It serves as a testament to a commitment to cryptographic excellence, algorithmic precision, and a deep understanding of secure coding practices.</p>
+    
+    
+      <img src="./img/AESC++.png" alt="OpenGL" style="width:100%" class="w3-hover-opacity">
+      
+        
+
+      </div>
+    </div>
+
+</div>
+
+</body>
+</html>

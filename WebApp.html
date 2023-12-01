@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="portfolio.html" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="./img/ian2.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="OpenGL.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i ></i>OpenGL</a>
+    <a href="Jupyter.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i ></i>Jupyter</a>
+    <a href="WebApp.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i ></i>Web App</a>
+    <a href="RustEncryption.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i ></i>Rust Encryption</a>
+    <a href="Bash.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i ></i>Bash</a>
+    <a href="CAES.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i ></i>C++ AES Implementation</a>
+  </div>
+  
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <div class=" w3-container">
+      <img src="./img/P2DisplayData.png" alt="Web App" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Web App Alt Portfolio</b></p>
+        <a href="https://bitbucket.org/ianslis4368workspace/lis4368/src/master/">Link to Repository</a>
+        <ul>
+          <li>
+              <p>A1 </p>
+              <ul>
+                  <li>Install Git for use with Bitbucket and generate necessary SSH keys for communication between repo and work PC</li>
+                  <li>Download and install AMPPS pack containing Apache web server, MongoDB, PHP, Perl, and an auto installer</li>
+                  <li>Install the Java Development Kit needed for writing and running Java programs</li>
+                  <li>Configure Visual Studio Code with various extensions etc. for programming with Java</li>
+                  <li>Download and install Apache Tomcat, a Java-capable HTTP server</li>
+                  <li>Clone assignment starter files to local repo</li>
+                  <li>Provide brief descriptions of Git commands</li>
+              </ul>
+          </li>
+      
+          <li>
+              <p>A2 </p>
+              <ul>
+                  <li>Install and configure MySQL and the MySQL Daemon</li>
+                  <li>Write a simple servlet (sayhello) with the Java Servlet API</li>
+                  <li>Install JDBC for use in querying data from the MySQL server</li>
+                  <li>Write an HTML form for querying the database</li>
+                  <li>Use the Java Servlet API to query the MySQL server database via the HTML form</li>
+              </ul>
+          </li>
+      
+          <li>
+              <p>A3 </p>
+              <ul>
+                  <li>Create an entity relationship diagram for a mock petstore SQL DB</li>
+                  <li>Forward engineer the MySQL ERD</li>
+                  <li>Populate tables with unique values</li>
+                  <li>Take screenshots of the ERD and populated tables to include in a3/index.jsp</li>
+              </ul>
+          </li>
+      
+          <li>
+              <p>A4 </p>
+              <ul>
+                  <li>Process the form contained in customerform.jsp with servlet</li>
+                  <li>Define processing behavior of form and handle requests in CustomerServlet.java (located in WEB-INF/crud/admin)</li>
+                  <li>Provide avenues for Server Side Regex and String length Validation in the CustomerServlet</li>
+                  <li>Upon passed validation redirect to thanks.jsp</li>
+                  <li>Upon failed validation return proper error messages</li>
+              </ul>
+          </li>
+      
+          <li>
+              <p>A5 </p>
+              <ul>
+                  <li>Process the form contained in customerform.jsp with servlet</li>
+                  <li>Define processing behavior of form and handle requests in CustomerServlet.java (located in WEB-INF/crud/admin)</li>
+                  <li>Provide avenues for Server Side Regex and String length Validation in the servlet</li>
+                  <li>Upon passed validation redirect to thanks.jsp and call CustomerDB.insert function with initialized Customer object</li>
+                  <li>CustomerDB gets connection to port 3306 where MySQL resides, prepares insert statement, and uses attributes of the Customer object parameter to pass data</li>
+                  <li>CustomerDB closes connection and prepared statement</li>
+                  <li>Upon failed validation return proper error messages and do not call CustomerDB.insert()</li>
+              </ul>
+          </li>
+      
+          <li>
+              <p>P1 </p>
+              <ul>
+                  <li>Create form fields per fields of the customer table of the previous database assignment</li>
+                  <li>Use jQuery and regular expressions to validate form fields</li>
+                  <li>Ensure that fields can only be populated with certain values and that field input is kept to a max length</li>
+                  <li>Provide screenshots of successful form validation and failed form validation</li>
+              </ul>
+          </li>
+      
+          <li>
+              <p>P2 </p>
+              <ul>
+                  <li>Create CustomerDB methods for CRUD (Create, Read, Update, Delete) functionality in the main web application</li>
+                  <li>Edit the modify and customers jsp files to display the correct information according to their function</li>
+                  <li>Ensure that the delete function in customers.jsp displays a warning before sending a query to the DB</li>
+                  <li>Ensure that the Edit function in customers.jsp correctly routes the user to modify.jsp with the user attributes set to the corresponding values in the form</li>
+                  <li>Take screenshots of everything and include them in the README</li>
+              </ul>
+          </li>
+      </ul>      
+      </div>
+    </div>
+
+<!-- End page content -->
+</div>
+</body>
+</html>

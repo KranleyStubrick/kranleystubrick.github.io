@@ -12,7 +12,7 @@
 /* Applying a professional font */
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-image: url(gameoflife.gif);
+    background-image: url(./img/gameoflife.gif);
 }
 
   .carousel {
